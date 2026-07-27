@@ -1,9 +1,10 @@
+#!/bin/zsh
 FILE=.zshrc
-if [ -f "~/$FILE" ]; then	
+SRC_DIR=$(pwd)
+if [ -f "$HOME/$FILE" ]; then	
 	echo "==> Config founded"
-	mv "~/$FILE" "~/$FILE.bak"
-	echo "==> Config moved to ~/.$FILE.bak"
+	mv "$HOME/$FILE" "$HOME/$FILE.bak"
+	echo "==> Config moved to $HOME/.$FILE.bak"
 fi
 mv "$FILE" "~/$FILE"
-cd /
-rm -rf "./zshConfig/"
+rm -rf "$SRC_DIR"
