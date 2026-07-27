@@ -6,5 +6,5 @@ if [ -f "$HOME/$FILE" ]; then
 	mv "$HOME/$FILE" "$HOME/$FILE.bak"
 	echo "==> Config moved to $HOME/.$FILE.bak"
 fi
-mv "$FILE" "~/$FILE"
+mv "$FILE" "$HOME/$FILE"
 rm -rf "$SRC_DIR"
