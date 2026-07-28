@@ -8,3 +8,5 @@ if [ -f "$HOME/$FILE" ]; then
 fi
 mv "$FILE" "$HOME/$FILE"
 rm -rf "$SRC_DIR"
+cd $HOME
+echo "==> .zshrc installed !"
