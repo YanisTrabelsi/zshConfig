@@ -21,7 +21,7 @@ CASE_SENSITIVE="true"
 
 # Thème du prompt (ici géré par Powerlevel10k via p10k configure,
 # mais oh-my-zsh a quand même besoin d'une valeur)
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Plugins chargés par oh-my-zsh (liste unique, fusionnée)
 # - git                    : raccourcis et infos git dans le prompt
